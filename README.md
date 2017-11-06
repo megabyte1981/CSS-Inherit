@@ -1,7 +1,7 @@
 # CSS inherit.js
-This simple jQuery plugin allows CSS classes to inherit from other CSS classes from with other CSS stylesheets. 
+This simple jQuery plugin allows CSS classes to inherit from other CSS classes that are being referenced from within other CSS stylesheets. 
 
-This plugin was a proof of concept project.  I'm sure there are some edge cases.
+This plugin was a proof of concept project.  I'm sure there are some edge cases.  
 
 #### Requirements
 - jQuery
@@ -10,7 +10,7 @@ This plugin was a proof of concept project.  I'm sure there are some edge cases.
 ```
 
 ## Usage
-Add the following plugin path within you <head></head> tags.
+Add the following plugin path within your head tags.
 ```html
 <script src='js/css.inherit.js'></script>
 ```
@@ -23,7 +23,7 @@ Add the following plugin path within you <head></head> tags.
 </script>
 ```
 #### Parameters
-The only options at this time are a debug print out of the inherited CSS.  This is helpful for when the rendered result is not as expected.
+The only options at this time is a debug print out of the inherited CSS styles.  This is helpful for when the rendered result is not as expected.
 ```javascript
 <script>
 	$(function() {
@@ -33,7 +33,7 @@ The only options at this time are a debug print out of the inherited CSS.  This 
 ```
 
 #### Final thing...
-Need to add "data-inheritCSS" to all CSS files that you want inheritCSS to work on.
+Need to add "data-inheritCSS" to all CSS files that you want this plugin to work on.
 ```html
 <!-- before -->
 <link href="css/style2.css" rel="stylesheet" type="text/css"/>
@@ -53,7 +53,7 @@ You still use standard HTML syntax for this plugin.  No special requirements nec
 </div>
 
 <div class="error-message-1">
-	Error Message Styling From .error-message ....
+	Error Message Styling from .error-message class....
 </div>
 
 <div class="container-box">
@@ -65,8 +65,8 @@ You still use standard HTML syntax for this plugin.  No special requirements nec
 </div>
 ```
 
-### Standard HTML coding
-Just follow CSS standard practices when using this plugin.  The only difference is now you can reference other style with a CSS class.
+### Standard CSS coding
+Just follow CSS standard practices when using this plugin.  The only difference is now you can reference other styles with a CSS class.
 - classes ie. ".error-message"
 - ids ie. "#line-through"
 - HTML elements ie. "h1, nav, section"
