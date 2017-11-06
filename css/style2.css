@@ -1,0 +1,9 @@
+.error-message-1 {
+	.error-message;
+}
+
+body, html { padding:0; margin:0; }
+
+.container-box-2 { 
+    .container-box;
+}
